@@ -1,5 +1,7 @@
 package com.example.demo.template;
 
+import java.util.function.Supplier;
+
 /**
  * Created by Serdar Turkmen on 17.05.2018
  */
@@ -8,9 +10,9 @@ public class TemplateDemo {
     public static void main(String... args){
 
         Tea tea = new Tea();
-        Coffee coffee = new Coffee();
+        Supplier<Coffee> coffee = Coffee::new;
         tea.prepareRecipe();
-        coffee.prepareRecipe();
+        coffee.get().prepareRecipe();
 
     }
 }
