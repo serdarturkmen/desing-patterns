@@ -1,10 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.decorator.Beverage;
-import com.example.demo.decorator.Espresso;
-import com.example.demo.decorator.HouseBlend;
-import com.example.demo.decorator.Mocha;
-
 /**
  * Created by Serdar Turkmen on 17.05.2018
  */
