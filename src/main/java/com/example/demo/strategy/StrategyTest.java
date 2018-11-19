@@ -14,7 +14,6 @@ public class StrategyTest {
 
         dog.setFlyType(new SuperFly());
         System.out.println("dog : " + dog.tryToFly());
-        
 
     }
 
