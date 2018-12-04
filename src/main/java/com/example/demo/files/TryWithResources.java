@@ -16,12 +16,15 @@ public class TryWithResources {
         JarEntry je;
 
         try (
-            FileInputStream fis = new FileInputStream(file);
-            JarInputStream jis = new JarInputStream(fis);
+                FileInputStream fis = new FileInputStream(file);
+                JarInputStream jis = new JarInputStream(fis);
         ) {
             while ((je = jis.getNextJarEntry()) != null) {
                 System.out.println(je.getName());
             }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
+        
     }
 }
